@@ -1,13 +1,414 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+  background-color: rgb(242, 242, 255);
+  font-family: 'Varela Round', sans-serif !important; 
+   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.loggedout{
+
+  transform:translate(30%, 60%)
+}
+
+.head {
+  background-color: #696969;
+  width: 100%;
+  height: 40px;
+}
+
+.btn:hover {
+  border-bottom: 3.5px solid rgb(255, 255, 255) !important;
+}
+
+.btn1 {
+  background-color: transparent !important;
+  color: black !important;
+  height: 20%;
+  width: 137.5%;
+  border: none !important;
+}
+
+.btn2 {
+  background-color: #0575e6 !important;
+  color: rgb(0, 0, 0) !important;
+  padding: 3px !important;
+  border-radius: 5px;
+}
+
+.btnlink {
+  background-color: transparent !important;
+  color: black !important;
+  height: 20%;
+  width: 137.5%;
+  margin-left: 12%;
+  border: none !important;
+}
+
+.btnlink1 {
+  background-color: transparent !important;
+  color: black !important;
+  height: 20%;
+  width: 137.5%;
+  margin-left: 90%;
+  border: none !important;
+}
+
+.btnlink:hover,
+.btnlink1:hover {
+  color: #fff !important;
+  height: 100%;
+  width: 137.5%;
+  background-color: #0575e6 !important;
+  border-bottom: 3.5px solid #0575e6 !important;
+  border-radius: 8px;
+}
+.btn1:hover {
+  color: #fff !important;
+  background-color: #0575e6 !important;
+  border-bottom: 3.5px solid #0575e6 !important;
+  border-radius: 8px;
+}
+
+.btn1:active {
+  border: none;
+}
+.login {
+  text-decoration: none;
+  display: inline;
+  float: right;
+  padding: 0px 10px 20px 5px;
+  margin-top: -2.5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.side-nav {
+  position: absolute;
+  list-style: none;
+  margin-top: -380px;
+  margin-left: -80px;
+  justify-content: center;
+}
+
+.side-nav-li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  height: 20%;
+  width: 137.5%;
+  padding: 10px;
+  display: flex;
+  color: rgb(12, 12, 14);
+  transition: all 0.4s;
+}
+
+.logoimage {
+  height: 90%;
+  float: left;
+}
+
+.Nav-left {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #0575e6;
+  box-shadow: 2px 2px 5px solid #000;
+  padding: 380px 80px;
+}
+
+h4 {
+  display: inline-block;
+  padding: 3px 0 0 0px;
+  color: rgb(255, 255, 255);
+}
+
+.table {
+  position: absolute;
+  width: 70% !important;
+}
+
+.mainCard {
+  height: 30% !important;
+  display: grid;
+  float: left;
+}
+.form-group1 {
+  width: 70% !important;
+  margin-left: 22.5% !important;
+}
+
+img {
+  width: 20%;
+  align-self: center;
+}
+
+.imgcol {
+  width: 10% !important;
+}
+
+.card {
+  width: 10% !important;
+  height: 10% !important;
+  margin: 2% !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 3px 6px #000 !important;
+}
+
+.nav-link {
+  text-decoration: none !important;
+}
+.nav-link:hover {
+  text-decoration: none !important;
+  color: rgb(255, 255, 255) !important;
+  border-radius: 17px !important;
+}
+
+.card-title {
+  color: #0575e6 !important;
+  background-color: #fff;
+}
+
+.card-img-top {
+  width: 190% !important ;
+  align-self: center !important;
+  text-align: center;
+}
+
+.card-group {
+  display: block;
+  max-width: 50% !important;
+  width: 20% !important;
+  height: 20% !important;
+  margin: 2px;
+  align-self: center !important;
+  text-align: center;
+  float: left !important;
+  padding: 8px !important;
+}
+
+.btn:hover {
+  border: none !important;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.card-cascade {
+  width: 70% !important;
+  margin-left: 15% !important;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffffff, #ece9e6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #fafaf9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cardimg2 {
+  text-align: center !important;
+  align-items: center !important;
+  align-self: center !important;
+  align-content: center !important;
+  margin-top: 1% !important;
+  margin-left: 32% !important;
+  box-shadow: 1px 1px 8px #000;
+  width: 40% !important;
+}
+.cardody {
+  align-items: center !important;
+  align-self: center !important;
+  margin-top: -4% !important;
+  background-color: #fff;
+  width: 85% !important;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 5px #000;
+}
+.navbar {
+  background: #8585eb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: rgb(0, 0, 0) !important;
+}
+
+.btn {
+  background-color: #2e86de !important;
+  border: none !important;
+  transition: all 0.9s;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn-md2 {
+  background-color: #ec2147 !important;
+  color: rgb(255, 255, 255) !important;
+
+  margin-left: 5px !important;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* .overlay{
+  width: 100% !important;
+} */
+
+.container {
+  max-width: 100% !important;
+  max-height: 900px !important;
+}
+
+.showcase {
+  z-index: 30;
+}
+.showcase li {
+  margin-left: -0.28%;
+  width: 53%;
+  list-style: none;
+}
+/* .photo {
+  width: 70%;
+} */
+
+.photo img {
+  z-index: -1;
+  height: 19rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: all 0.4s;
+}
+
+.localtext {
+  display: block;
+  width: 100% !important;
+  height: 2rem !important;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.main1-font{
+  font-family: 'Varela Round', sans-serif !important;
+  font-size: 21px !important;
+  color:#2E86DE !important;
+}
+
+
+.localtext1 {
+  display: block;
+  width: 100% !important;
+  height: 2rem !important;
+  overflow: hidden !important;
+}
+
+abbr {
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.form-control {
+  width: 70% !important ;
+}
+
+.searchbtn {
+  margin-top: -24.5% !important;
+  margin-left: 72% !important;
+  background: #00d2ff;
+  height: 25% !important;
+  padding: 8.3px 10px !important;
+  background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);
+  background: linear-gradient(to left, #5597f5, #0aaace);
+}
+
+.form-outline {
+  margin-top: 0.5% !important;
+  margin-left: 70% !important;
+}
+
+.fa {
+  color: #ffd325 !important;
+}
+
+.star-ratings {
+  float: left;
+  display: block;
+  unicode-bidi: bidi-override;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.star-ratings .star-ratings-top {
+  color: gold;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0px;
+  overflow: hidden;
+}
+
+.star-ratings .star-ratings-bottom {
+  z-index: 0;
+}
+
+.dropdown12 {
+  margin-left: -33% !important;
+  margin-bottom: -29.24% !important;
+}
+
+.finalstyle {
+  margin-top: -3% !important;
+  margin-bottom: -5% !important;
+}
+
+.styling {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.drop2 {
+  display: grid !important;
+  margin-left: -21% !important;
+  margin-top: -1.2% !important;
+  height: 40px !important;
+  border-radius: 5px !important;
+  background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);
+  background: linear-gradient(to left, #3780e6, #32b0cc);
+}
+
+.dropdown-item {
+  background-color: #fff !important;
+}
+
+.searchbox {
+  margin-top: 28% !important;
+}
+
+.searchbox input {
+  height: 25% !important;
+}
+
+.textstyle {
+  text-align: justify !important;
+}
+
+.textstyle1 {
+  color: #336dec !important;
+  text-shadow: 1px 1px 2px rgb(15, 67, 211) !important;
+}
+
+.inner {
+  color: #000;
+  height: 1rem;
 }
